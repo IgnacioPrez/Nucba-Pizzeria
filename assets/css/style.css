@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
+
+    font-family: 'Montserrat', sans-serif;
 }
 
 :root{
@@ -72,12 +76,28 @@
 }
 .hero-container{
     display: flex;
+    justify-content: space-between;
     width: 100%;
     border: solid 2px #fff;
 }
 
 .hero-info{
     width: 50%;
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*AGREGO SPAN AL H2*/
+
+.hero-info h2 {
+    background: #fc2933;
+    font-size: 66px;
+    display: flex;
+    flex-direction: column;
 }
 
 .poster-container{
