@@ -88,10 +88,13 @@ font-family: 'Roboto', sans-serif;
     gap: 40px;
 }
 .hero-info h2{
-    font-size: 90px;
+    font-size: 70px;
+    letter-spacing: 5px;
+    font-weight: bold;
 }
 .hero-info p{
-    font-size: xx-large;
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.796) ;
 }
 .poster-container{
     width: 50%;
@@ -119,14 +122,15 @@ font-family: 'Roboto', sans-serif;
 }
 
 .button-hero{
-    width: 10em;
-    padding: 1em;
-    border-radius: 20px;
+    width: 9.4em;
+    padding: 0.7em;
+    border-radius: 15px;
     color: var(--text-color);
     background: var(--background-gradient);
     border: none;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 20px;
+
 }
 
 .container-recommendation{
