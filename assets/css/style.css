@@ -9,7 +9,7 @@
     --background: #252525;
     --background-nav:#ffa400;
     --text-color:#ffffff;
-    --background-gradient:linear-gradient(#ffa100,#fb103d);
+    --background-gradient:linear-gradient(86deg,#ffa100,#fb103d);
     --number-color:#fc2933;
 }
 /* COMIENZO DEL HEADER */
@@ -69,17 +69,28 @@
 .container-main{
     display: flex;
     flex-direction: column;
+    margin-top: 5em;
 }
 .hero-container{
     display: flex;
-    width: 100%;
-    border: solid 2px #fff;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .hero-info{
+    display: flex;
+    flex-direction: column;
     width: 50%;
+    color: var(--text-color);
+    justify-content: center;
+    gap: 40px;
 }
-
+.hero-info h2{
+    font-size: 90px;
+}
+.hero-info p{
+    font-size: xx-large;
+}
 .poster-container{
     width: 50%;
     display: flex;
@@ -87,10 +98,26 @@
 }
 
 .poster-container img:nth-child(2){
-    height: max-content;
+    width: 100%;
+    max-width:300px;
+    height: 18em;
+    position: relative;
+    z-index: 2;
+    left: 58px;
+    top: 50px;
 }
 
 .poster-container img:nth-child(1){
     height: auto;
-    z-index: 2;
+    height: 390px;
+}
+
+.button-hero{
+    width: 15em;
+    padding: 1.7em;
+    border-radius: 20px;
+    color: var(--text-color);
+    background: var(--background-gradient);
+    border: none;
+    cursor: pointer;
 }
