@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background);
+    background-color: #131212;
+font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -70,6 +71,7 @@
     display: flex;
     flex-direction: column;
     margin-top: 5em;
+    gap: 80px;
 }
 .hero-container{
     display: flex;
@@ -99,25 +101,119 @@
 
 .poster-container img:nth-child(2){
     width: 100%;
-    max-width:300px;
+    max-width:250px;
     height: 18em;
     position: relative;
     z-index: 2;
-    left: 58px;
-    top: 50px;
+    left: 18px;
+    top: 10px;
+
 }
 
 .poster-container img:nth-child(1){
     height: auto;
-    height: 390px;
+    height: 320px;
+    position: relative;
+    bottom: 15px;
+    right: 25px;
 }
 
 .button-hero{
-    width: 15em;
-    padding: 1.7em;
+    width: 10em;
+    padding: 1em;
     border-radius: 20px;
     color: var(--text-color);
     background: var(--background-gradient);
     border: none;
     cursor: pointer;
+    font-size: 25px;
+}
+
+.container-recommendation{
+    width: 90%;
+    margin: 0 auto;
+    height: 20em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+}
+
+.position:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 40%;
+    position: relative;
+    top: 50px;
+    font-size: xx-large;
+    color:var(--text-color);
+}
+
+.position:nth-child(2){
+    height: 70%;
+    width: 100%;    
+}
+.position:nth-child(3){
+    height: 70%;
+    width: 100%;    
+}
+.position:nth-child(4){
+    height: 70%;
+    width: 100%;    
+}
+
+.recommendation{
+    display: flex;
+    width: 100%;
+    background: var(--background);
+    border-radius: 20px;
+    align-items: center;
+    gap: 10px;
+    padding: 1em;
+}
+
+.recommendation img {
+    width: 5em;
+    height: 5em;
+    border-radius: 20px;
+}
+.info-recommendation{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 5px;
+    background: inherit;
+
+}
+.info-recommendation h4{
+    font-size: x-large;
+    font-weight: 400;
+    background: inherit;
+    color: var(--text-color);
+
+}
+.info-recommendation p:nth-child(2){
+    background: inherit;
+    font-size: large;
+    color: rgba(255, 255, 255, 0.292);
+    letter-spacing: 2px;
+}
+
+.info-recommendation p:nth-child(3){
+    font-size: 30px;
+    background: -webkit-linear-gradient(256deg,#ffa100,#fc2933);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+
+.button-recommendation{
+    width: 8em;
+    padding: 0.8em;
+    border-radius: 20px;
+    color: var(--text-color);
+    background: var(--background-gradient);
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
 }
