@@ -4,8 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< HEAD
     background: var(--background);
     font-family: 'Roboto', sans-serif;
+=======
+    background-color: var(--background);
+
+    font-family: 'Montserrat', sans-serif;
+>>>>>>> cb84ea0cf54cb2cb749cd370cf064bf369ac60bd
 }
 
 :root{
@@ -81,14 +87,21 @@
 }
 .hero-container{
     display: flex;
+<<<<<<< HEAD
     width: 90%;
     margin: 0 auto;
+=======
+    justify-content: space-between;
+    width: 100%;
+    border: solid 2px #fff;
+>>>>>>> cb84ea0cf54cb2cb749cd370cf064bf369ac60bd
 }
 
 .hero-info{
     display: flex;
     flex-direction: column;
     width: 50%;
+<<<<<<< HEAD
     color: var(--text-color);
     justify-content: center;
     gap: 40px;
@@ -101,6 +114,23 @@
 .hero-info p{
     font-size: x-large;
     color: rgba(255, 255, 255, 0.796) ;
+=======
+
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*AGREGO SPAN AL H2*/
+
+.hero-info h2 {
+    background: #fc2933;
+    font-size: 66px;
+    display: flex;
+    flex-direction: column;
+>>>>>>> cb84ea0cf54cb2cb749cd370cf064bf369ac60bd
 }
 .poster-container{
     width: 50%;
