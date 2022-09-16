@@ -1,0 +1,223 @@
+
+/* MEDIA QUERIES*/
+@media (max-width: 992px) {
+    .hero-info {
+        text-align: center;
+        width: 100%;
+        align-items: center;
+    }
+
+    .hero-info h2 {
+        display: block;
+        width: 100%;
+    }
+
+    .hero-info p {
+        max-width: 80%;
+        font-size: 16px;
+    }
+
+    .button-hero {
+        justify-content: center;
+    }
+
+    .poster-container {
+        display: none;
+    }
+
+    .container-recommendation {
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        gap: 80px;
+        align-items: center;
+    }
+
+    .recommendation{
+        display: flex;
+        max-width: 50%;
+        background: var(--background-targets);
+        border-radius: 20px;
+        align-items: center;
+        gap: 10px;
+        padding: 1.5em;
+    }
+    
+
+    .categories{
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px;
+    }
+    .position-2:nth-child(1){
+        grid-column: 1/3;
+    }
+
+    .categories-container {
+        width: 70%;
+    }
+    .popular {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .popular h3 {
+        right: 300px;
+    }
+    .targets {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+
+    .target {
+        background: var(--background-targets);
+        padding: 0;
+        height: auto;
+        width: 45%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+    }
+    .target img {
+        max-width: 250px;
+        border-radius: 15px;
+    }
+    
+
+}
+
+@media (max-width: 576px) {
+    .hero-info h2{
+         font-size: 60px;
+    }
+    .navbar ul {
+        width: 100%;
+        height: calc(100vh - 70vh);
+        position: absolute;
+        top: 80px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(200%);
+    }
+    .navbar-list {
+        display: flex;
+        margin-right: 0;
+        margin-top: 0;
+    }
+
+    .navbar i {
+        display: block;
+        position: relative;
+        top: 15px;
+        left: -10px;
+    }
+
+    #toggle-menu:checked + .navbar-list {
+        transform: translateX(0);
+    }
+
+    .hero-info p {
+        max-width: 100%;
+    }
+    
+    .container-recommendation {
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        gap: 80px;
+        align-items: center;
+    }
+    
+    .position:nth-child(1){
+        font-size: 20px;
+    }
+
+    .recommendation{
+        display: flex;
+        max-width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0.5em;
+    }
+    .categories{
+        width: 100%;
+        align-items: center;
+    }
+
+    .position-2:nth-child(1){
+        margin-left: 10px;
+    }
+    .categories-container {
+        margin-left: 10px;
+        width: 80%;
+    }
+    .popular {
+        gap: 30px;
+    }
+    .popular h3 {
+        right: 50px;
+    }
+    .targets {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .target {
+        width: 85%;
+    }
+    .target img {
+        max-width: 250px;
+        border-radius: 15px;
+    }
+    .footer {
+        margin-top: 5em;
+        height: 15em;
+        background-color: var(--background);
+        padding:  20px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .a-footer {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+    
+    .a-footer a {
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    
+    .despedida p {
+        text-align: center;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    
+    .despedida p span {
+        font-weight: 900;
+    }
+    
+}
