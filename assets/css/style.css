@@ -272,6 +272,7 @@
     padding: 1em;
     border-radius: 10px;
     width: 90%;
+    cursor: pointer;
 }
 .categories-container img {
     background: inherit;
@@ -284,7 +285,7 @@
     background: var(--background-gradient);
     height: 4px;
     border-radius:10px;
-    width: 20%;
+    width: 40%;
 }
 
 .popular {
@@ -365,6 +366,7 @@
     padding: 10px;
     font-weight: 400;
     font-size: 12px;
+    cursor: pointer;
     border: none;
     color: #ffffff;
     background: linear-gradient(86deg,#ffa100,#fb103d)  
