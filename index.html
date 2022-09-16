@@ -7,21 +7,29 @@
     <title>Pizzeria NUCBA</title>
     <link href="./assets/css/style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="./assets/css/mediaQuery.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="container-header">
         <img class='icon-pizzeria' src="./assets/icon/nucbazappiicon 1.png" alt="logo pizzeria"/>
         <nav class="navbar">
-            <div class="home-icon-container">
-                <p>Home</p>
-                <img src="./assets/icon/home.png" alt="home icon">
-            </div>
-            <div>
-                <img src="./assets/icon/cart.png" alt="cart icon">
-                <span class="bubble-alert">7</span>
-            </div>
-            <img src="./assets/icon/person (1).png" alt="cart icon">
+            <label for="toggle-menu"><i class="fas fa-bars"></i></label>
+            <input type="checkbox" id="toggle-menu">
+            <ul class="navbar-list ">
+                <li>
+                    <div class="home-icon-container">
+                        <p>Home</p>
+                        <img src="./assets/icon/home.png" alt="home icon">
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/icon/cart.png" alt="cart icon">
+                        <span class="bubble-alert">7</span>
+                    </div>
+                </li>
+                <img src="./assets/icon/person (1).png" alt="cart icon">
+            </ul>
         </nav>
     </header>
     <main class="container-main">
