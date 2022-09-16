@@ -25,10 +25,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 3em;
     position: fixed;
     top: 0;
     z-index: 1;
+
 }
 
 .navbar-list {
@@ -37,7 +37,7 @@
     gap: 80px;
     align-items: center;
     margin-right: 5em;
-
+    margin-top: 1em;
 }
 .navbar img{
     height: 2em;
@@ -404,82 +404,4 @@
 
 .despedida p span {
     font-weight: 900;
-}
-
-/* MEDIA QUERIES*/
-@media (max-width: 992px) {
-    .hero-info {
-        text-align: center;
-        width: 90%;
-        align-items: center;
-    }
-
-    .hero-info h2 {
-        display: block;
-        width: 100%;
-    }
-
-    .hero-info p {
-        max-width: 80%;
-        font-size: 16px;
-    }
-
-    .button-hero {
-        justify-content: center;
-    }
-
-    .poster-container {
-        display: none;
-    }
-
-    .container-recommendation {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .container-recommendation h3 {
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .categories {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .categories h3{
-        margin-top: 10px;
-    }
-
-    .targets {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 576px) {
-    .navbar ul {
-        width: 100%;
-        height: calc(100vh - 80px);
-        position: absolute;
-        top: 80px;
-        left: 0;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        transform: translateX(200%);
-    }
-
-    .navbar i {
-        display: block;
-    }
-
-    #toggle-menu:checked + .navbar-list {
-        transform: translateX(0);
-    }
-
-    .hero-info p {
-        max-width: 100%;
-    }
 }
