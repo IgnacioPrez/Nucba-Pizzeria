@@ -96,9 +96,12 @@
 }
 
 @media (max-width: 576px) {
+    .hero-info h2{
+         font-size: 60px;
+    }
     .navbar ul {
         width: 100%;
-        height: calc(100vh - 80px);
+        height: calc(100vh - 70vh);
         position: absolute;
         top: 80px;
         left: 0;
@@ -107,9 +110,17 @@
         justify-content: center;
         transform: translateX(200%);
     }
+    .navbar-list {
+        display: flex;
+        margin-right: 0;
+        margin-top: 0;
+    }
 
     .navbar i {
         display: block;
+        position: relative;
+        top: 15px;
+        left: -10px;
     }
 
     #toggle-menu:checked + .navbar-list {
@@ -119,4 +130,94 @@
     .hero-info p {
         max-width: 100%;
     }
+    
+    .container-recommendation {
+        display: flex; 
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        gap: 80px;
+        align-items: center;
+    }
+    
+    .position:nth-child(1){
+        font-size: 20px;
+    }
+
+    .recommendation{
+        display: flex;
+        max-width: 80%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0.5em;
+    }
+    .categories{
+        width: 100%;
+        align-items: center;
+    }
+
+    .position-2:nth-child(1){
+        margin-left: 10px;
+    }
+    .categories-container {
+        margin-left: 10px;
+        width: 80%;
+    }
+    .popular {
+        gap: 30px;
+    }
+    .popular h3 {
+        right: 50px;
+    }
+    .targets {
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .target {
+        width: 85%;
+    }
+    .target img {
+        max-width: 250px;
+        border-radius: 15px;
+    }
+    .footer {
+        margin-top: 5em;
+        height: 15em;
+        background-color: var(--background);
+        padding:  20px;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+    
+    .a-footer {
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+    }
+    
+    .a-footer a {
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    
+    .despedida p {
+        text-align: center;
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 17px;
+    }
+    
+    .despedida p span {
+        font-weight: 900;
+    }
+    
 }
