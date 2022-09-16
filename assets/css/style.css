@@ -113,10 +113,9 @@
     max-width:250px;
     height: 18em;
     position: relative;
-    z-index: 2;
+    /* z-index: 1; */
     left: 18px;
     top: 10px;
-
 }
 
 .poster-container img:nth-child(1){
@@ -125,6 +124,8 @@
     position: relative;
     bottom: 15px;
     right: 25px;
+    float: right;
+    /* z-index: 2; */
 }
 
 .button-hero{
